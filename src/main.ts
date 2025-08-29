@@ -14,7 +14,7 @@ async function bootstrap() {
       forbidNonWhitelisted: true,
     }),
   );
-  await app.listen(3000);
+  await app.listen(3000, '0.0.0.0');
   logger.log(`Payment Microservice running on port ${envs.port}`);
 }
 bootstrap();
